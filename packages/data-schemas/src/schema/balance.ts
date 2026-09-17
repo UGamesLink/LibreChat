@@ -14,6 +14,11 @@ const balanceSchema: Schema<t.IBalance> = new Schema<t.IBalance>({
     type: Number,
     default: 0,
   },
+  // Balance in Russian Rubles (RUB)
+  rubles: {
+    type: Number,
+    default: 0,
+  },
   // Automatic refill settings
   autoRefillEnabled: {
     type: Boolean,
