@@ -17,6 +17,7 @@ export interface IBalancePendingRefill {
 export interface IBalance extends Document {
   user: Types.ObjectId;
   tokenCredits: number;
+  rubles: number;
   // Automatic refill settings
   autoRefillEnabled: boolean;
   refillIntervalValue: number;
@@ -35,6 +36,7 @@ export interface IBalance extends Document {
 export interface IBalanceUpdate {
   user?: string;
   tokenCredits?: number;
+  rubles?: number;
   autoRefillEnabled?: boolean;
   refillIntervalValue?: number;
   refillIntervalUnit?: RefillIntervalUnit;
